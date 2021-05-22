@@ -1,0 +1,42 @@
+Arguments: 
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js add -D rollup @babel/core @babel/preset-env
+
+PATH: 
+  /home/cy/.yarn/bin:/home/cy/bin:/home/cy/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/cy/.dotnet/tools
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  13.7.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/cy/projects/simple-peer-data-packets/package.json: Unexpected token ' in JSON at position 290
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "simple-peer-data-packets",
+    "version": "0.1.0",
+    "description": "Data packet shim to extend Simple Peer data messaging due to limitations in webrtc & browser",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": ['webrtc', 'simple-peer', 'shim', 'chunking'],
+    "author": "Eric Xanderson <disarticulate@gmail.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
